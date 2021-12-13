@@ -1,0 +1,196 @@
+body {
+  background-color: lightpink;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(red,orange,yellow,green,blue,indigo,violet);
+  background-image: url("../img/blue-cross-riverrink-summerfest-dusk-new-jfusco-for-vp-2200x1237px.jpg");
+  /*background-repeat: no-repeat; */
+  background-image: url("../img/blue-cross-riverrink-summerfest-dusk-new-jfusco-for-vp-2200x1237px.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center
+}
+
+.animate {
+  animation-name: wonderwoman;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  animation-fill-mode: forwards
+}
+
+@keyframes wonderwoman {
+  0% {transform: translate(0,0);}
+  100% {transform: translate(2000px,0);}
+}
+
+table {
+  width: 100%;
+  background-color: lightblue;
+}
+tr {
+  height: 10vh;
+}
+td {
+  border: black 2px solid;
+}
+
+header {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav > ul > li {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+nav > ul > li > a {
+  font-size: 2em;
+}
+
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: black;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+footer {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: darkgray;
+}
+
+p:first-letter {
+  font-size: 2em;
+}
+
+p: {
+  font-weight: bold;
+  color: black
+}
+
+blockquote {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-weight: bold;
+}
+
+.about {
+  /* position: absolute;
+  z-index: -100;
+  left: 50px; */
+  float: left;
+  width: 500px;
+  height: 500px;
+  border: 2px red solid;
+  padding: 50px;
+  margin: 25px;
+  box-shadow: 5px 10px black;
+  background-color: rgba(255,0,0,0.5);
+  box-sizing: border-box;
+  /* visibility: hidden; */
+  display: none;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+}
+
+form {
+  width: 65%;
+  padding: 2%;
+  margin: 0 auto;
+  background-color: lightgreen;
+}
+
+.newsletter {
+  background-color: lightpink;
+  height: 25vh;
+}
+
+.emailbox {
+  padding: 2%;
+  width: 65%;
+  margin-right: 5%;
+}
+
+.submitbutton {
+  padding: 2%;
+  width: 15%;
+}
+
+.demo, .demo2 {
+  margin:10px;
+  width: 200px;
+  height: 200px;
+  color: white;
+  padding: 5px;
+  background-color: blue;
+    position: absolute;
+animation: movement 5s alternate infinite ease-in 2s;
+  float: left;
+}
+
+@keyframes movement {
+  0%, 100% {
+    transform: translate(0,0);
+  }
+  50% {transform: translate(400px,0);
+  }
+}
+
+.demo:hover {
+  background-color: red;
+}
+
+.demo2:hover {
+  background-color: red;
+  color: black;
+}
+
+.demo2 {
+  transition-property: background-color;
+  transition-duration: 5s;
+  transition-timing-function:ease-out;
+  transition-delay: 2s;
+/ *   transition-property: color;
+  transition-duration: 2s; */
+  tranform: skewx(25deg);
+  transform: skewy(25deg);
+}
+
+i {
+  color: pink;
+}
+
+@media all and (min-width: 320px) and (max-width:780px) {
+  body {
+    background-color: orange;
+  }
+img {
+  display: none
+}
